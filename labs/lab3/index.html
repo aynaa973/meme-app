@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magical Shop Inventory</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Magic Shop</h1>
+    <div>
+        <button onclick="listItems()">Show Inventory</button><br>
+        <button onclick="calculateTotalValue()">Calculate Total</button>
+        <p id="totalVal"></p>
+    </div>
+
+    <input type="text" id="searchQuery" placeholder="Search by name or type">
+    <button onclick="searchItems()">Search</button>
+
+    <div id="inventory"></div>
+
+    <h2>Add New Item</h2>
+    <div>
+    <input type="text" id="itemName" placeholder="Item Name">
+    </div>
+    <div>
+    <input type="text" id="itemType" placeholder="Item Type">
+    </div>
+    <div>
+    <input type="number" id="itemPrice" placeholder="Price">
+    </div>
+    <div>
+    <input type="number" id="itemQuantity" placeholder="Quantity">
+    </div>
+    <div>
+    <input type="text" id="itemDescription" placeholder="Description">
+    </div>
+    <button onclick="addItem()">Add Item</button>
+
+    <h2>Remove Item</h2>
+    <input type="text" id="rmvitem" placeholder="Enter item name">
+    <div>
+    <button onclick="removeItem()">Remove Item</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
