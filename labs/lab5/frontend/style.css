@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+
+button {
+    background-color: #0c68b5;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 150px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.meme-editor {
+    margin-top: 30px;
+    display: none;
+}
+
+#meme-canvas {
+    border: 1px solid #000;
+    margin-top: 20px;
+}
